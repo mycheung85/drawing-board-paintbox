@@ -1,10 +1,25 @@
-let colourSwatch = document.querySelectorAll(".swatch");
+// let colourSwatch = document.querySelectorAll(".swatch");
+let colourPallet = [
+  "black",
+  "grey",
+  "white",
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "indigo",
+  "violet"
+];
 
-for (const colour of colourSwatch) {
-  colour.addEventListener("click", e => {
+for (const colour of colourPallet) {
+  const swatch = document.createElement("div");
+  swatch.className = "swatch";
+  swatch.style.backgroundColor = colour;
+  swatch.addEventListener("click", e => {
     setSwatch(e);
   });
-  false;
+  document.getElementById("paintbox").appendChild(swatch);
 }
 
 function setColour(colour) {

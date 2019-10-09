@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Canvas Test</title>
+  </head>
+  <body>
+    <div id="toolbar">
+      <div class="radius">
+        Radius
+        <span id="randval">10</span>
+        <div id="decrad" class="radcontrol">-</div>
+        <div id="incrad" class="radcontrol">+</div>
+      </div>
+      <div class="colours">
+        <button class="swatch" style="background-color: red"></button>
+        <button class="swatch" style="background-color: blue"></button>
+        <button class="swatch" style="background-color: green"></button>
+      </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script type="text/javascript" src="./main.js"></script>
+    <script type="text/javascript" src="./radius.js"></script>
+    <script type="text/javascript" src="./colour.js"></script>
+  </body>
+</html>
